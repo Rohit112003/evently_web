@@ -2,12 +2,12 @@
 
 import { CreateUserParams ,UpdateUserParams} from "@/types"
 
-import { handleError } from "../utils"
+import { handleError } from "../Database/utils"
 import { error } from "console"
 import { connecToDatabase } from "../Database"
-import User from "@/models/user.model"
-import Order from '@/models/order.model'
-import Event from "@/models/event.model"
+import User from "@/lib/Database/models/user.model"
+import Order from '@/lib/Database/models/order.model'
+import Event from "@/lib/Database/models/event.model"
 import { revalidatePath } from "next/cache"
 
 
